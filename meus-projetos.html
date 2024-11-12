@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.ico">
+
+  <title>ISX │ Desenvolvedor Web</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsividade.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--AOS CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!--EmailJS-->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-80XVHS2NWN');
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '756368293168994');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=756368293168994&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+  <div class="loader"></div>
+
+  <!--Start HEADER-->
+  <header id="header" class="header">
+    <div class="container-header">
+      <div class="logo">
+        <a href="index.html">ISX <span class="destaque">│ DEV.</span></a>
+      </div>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div id="menu" class="menu-navegacao">
+        <i class="fa-solid fa-times close-icon"></i>
+        <ul class="lista-navegacao">
+          <li><a href="index.html" class="fade-left">INÍCIO</a></li>
+          <li><a href="sobre-mim.html" class="fade-up">SOBRE</a></li>
+          <li><a href="meus-projetos.html" class="fade-down">PROJETOS</a></li>
+          <li><a href="contato.html" class="fade-left">CONTATO</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--End HEADER-->
+
+  <!--Start Section Projects-->
+  <section id="projects" class="projects">
+    <div class="container-projects">
+
+      <div class="headline" data-aos="fade-up" data-aos-delay="100">
+        <span>Alguns projetos</span>
+      </div>
+
+      <div class="content-projects">
+        <div class="cards-projects">
+
+          <!--Card Projeto 1-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
+            <div class="img-project">
+              <img src="assets/image/calculadora.png" alt="Calculadora">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Calculadora Windows</h2>
+                <span>Pessoal</span>
+                <p>Calculadora web com operações básicas, projetada com interface limpa e intuitiva.</p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="https://iansaccar7.github.io/Calculadora-/" target="_self"> Acessar Site </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 1-->
+
+          <!--Card Projeto 2-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="200">
+            <div class="img-project">
+              <img src="assets/image/cronometro.png" alt="Tread Skateboard">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Crônometro.Js</h2>
+                <span>Pessoal</span>
+                <p>Cronômetro com funções de contagem progressiva, oferecendo precisão e facilidade de uso.</p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="https://iansaccar7.github.io/Cronometro/" target="_self">Acessar Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 2-->
+
+          <!--Card Projeto 3-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="250">
+            <div class="img-project">
+              <img src="assets/image/gas-price.png" alt="projeto 3">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Calculadore de combustível</h2>
+                <span>Pessoal</span>
+                <p>Aplicativo de cálculo de custo de combustível, projetado para ajudar motoristas a estimar o gasto com gasolina em diferentes trajetos.</p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 3-->
+
+
+          <div class="chevron-down">
+            <img src="assets/image/scroll-icon.png" alt="image">
+          </div>
+
+          <!--Card Projeto 4-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="300">
+            <div class="img-project">
+              <img src="assets/image/hora-do-dia.png" alt="copfy">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Hora do dia </h2>
+                <span>Pessoal</span>
+                <p>Portal completo que reúne um blog informativo, uma plataforma de vendas online e um
+                  diretório de serviços, tudo em um único ambiente. </p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 4-->
+
+          <!--Card Projeto 5-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="350">
+            <div class="img-project">
+              <img src="assets/image/Weathernow.png" alt="Helo Fernandes">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>WeatherNow</h2>
+                <span>Pessoal</span>
+                <p>Aplicativo de previsão do tempo que fornece dados atualizados e detalhados sobre clima e temperatura em diferentes localidades.</p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 5-->
+
+          <!--Card Projeto 6-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
+            <div class="img-project">
+              <img src="assets/image/Space-News.png" alt="">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Space News</h2>
+                <span>Landing Page</span>
+                <p>Explorador interativo das Maravilhas do Espaço, que apresenta imagens e informações fascinantes sobre planetas, estrelas e galáxias. </p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 6-->
+
+          <!--Card Projeto 7-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
+            <div class="img-project">
+              <img src="assets/image/frontend-mentor1.png" alt="">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Blog Preveiw Card</h2>
+                <span>Frontend Mentor</span>
+                <p>Desafio de cartão interativo do Frontend Mentor, focado em HTML e CSS. Este projeto explora o uso de estilos modernos, tipografia e layout responsivo,
+                  criando uma interface visual atraente e funcional. Desenvolvido para melhorias em habilidades de design de componentes e responsividade.
+                </p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 7-->
+
+          <!--Card Projeto 8-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
+            <div class="img-project">
+              <img src="assets/image/frontend-mentor2.png" alt="">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Product Preveiw Card</h2>
+                <span>Frontend Mentor</span>
+                <p>Cartão de produto de e-commerce desenvolvido como desafio do Frontend Mentor.
+                  O design inclui uma imagem atraente do produto, detalhes descritivos e precificação com destaque para o preço promocional.
+                </p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 8-->
+
+          <!--Card Projeto 9-->
+          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
+            <div class="img-project">
+              <img src="assets/image/frontend-mentor3.png" alt="">
+            </div>
+
+            <div class="content-card">
+              <div class="text-project">
+                <h2>Social Links profile</h2>
+                <span>Frontend Mentor</span>
+                <p>Página de perfil minimalista com links para redes sociais, desenvolvida como desafio do Frontend Mentor.
+                  Este projeto utiliza um design centrado e elegante com foco na tipografia e na acessibilidade.
+                </p>
+              </div>
+              <div class="cta-project">
+                <div class="tag-project">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="btn-project">
+                  <a href="#" target="_self">Site Indisponivel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card Projeto 9-->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section Projects-->
+
+  <!--Footer-->
+  <footer class="footer">
+    <p>© 2024 Ian Saccar. Todos os direitos reservados.</p>
+  </footer>
+  <!--End Footer-->
+
+  <!--Scripts-->
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/headerAnimation.js"></script>
+  <script src="assets/js/textAnimation.js"></script>
+  <script src="assets/js/changePagesAnimation.js"></script>
+  <script src="assets/js/loadingAnimation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>
