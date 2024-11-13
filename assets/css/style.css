@@ -566,7 +566,7 @@ body {
 
 .card-tech:hover img {
     opacity: 0.6;
-    filter: brightness(0) invert(1);
+    
 }
 
 .card-tech:hover img[data-tech="html"] {
@@ -584,80 +584,6 @@ body {
 .card-tech:hover img[data-tech="bootstrap"] {
     filter: sepia(1) hue-rotate(265deg) saturate(8);
 }
-
-/*SERVICES*/
-.services {
-    user-select: none;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.container-services {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.content-services {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.card-service {
-    background-color: #151515;
-    border-radius: 25px;
-    max-width: 320px;
-    height: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 1.2rem;
-    padding: 15px;
-    overflow: hidden;
-}
-
-.card-service i {
-    width: 90px;
-    height: 90px;
-    display: flex;
-    border-radius: 25%;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    background-color: var(--blue);
-}
-
-.card-service i {
-    transition: all .8s ease;
-}
-
-.card-service:hover i {
-    box-shadow: 0px 0px 0px 200px var(--blue);
-}
-
-.card-service h2 {
-    font-size: 1.2rem;
-}
-
-.card-service p {
-    color: var(--white);
-    font-weight: 400;
-    font-size: 1rem;
-}
-
 
 /* TESTIMONIAL */
 .testimonial {
