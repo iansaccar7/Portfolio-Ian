@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+
+/* tela de carregamento */
 #loading-screen {
     position: fixed;
     top: 0;
