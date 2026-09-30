@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.querySelector('.menu-icon');
-    const closeIcon = document.querySelector('.close-icon');
     const menu = document.getElementById('menu');
+    const abrir = document.querySelector('.menu-icon');
+    const fechar = document.querySelector('.close-icon');
 
-    menuIcon.addEventListener('click', function() {
-        menu.classList.add('open');
-        menu.classList.add('slide-in');
-    });
+    function alternar(aberto) {
+        menu.classList.toggle('open', aberto);
+        abrir.setAttribute('aria-expanded', aberto);
+        document.body.style.overflow = aberto ? 'hidden' : '';
+    }
 
-    closeIcon.addEventListener('click', function() {
-        menu.classList.remove('slide-in');
-        setTimeout(() => menu.classList.remove('open'), 300); 
-    });
+    abrir.addEventListener('click', () => alternar(true));
+    fechar.addEventListener('click', () => alternar(false));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') alternar(false); });
 });

@@ -3,14 +3,14 @@
 particlesJS("particles-js", {
     "particles": {
         "number": {
-            "value": 120,
+            "value": 70,
             "density": {
                 "enable": true,
                 "value_area": 850
             }
         },
         "color": {
-            "value": "#fafafa"
+            "value": "#f07a2a"
         },
         "shape": {
             "type": "circle",
@@ -50,13 +50,13 @@ particlesJS("particles-js", {
         "line_linked": {
             "enable": true,
             "distance": 150,
-            "color": "#fafafa",
+            "color": "#6b645c",
             "opacity": 0.4,
             "width": 1
         },
         "move": {
             "enable": true,
-            "speed": 6,
+            "speed": 2,
             "direction": "none",
             "random": false,
             "straight": false,
@@ -110,24 +110,3 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
 });
-
-
-/* ---- stats.js config ---- */
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function () {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);

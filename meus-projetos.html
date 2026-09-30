@@ -4,23 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/x-icon" href="assets/image/fav-icon.png">
-
-  <title>ISX │ Desenvolvedor Web</title>
-
+  <title>Projetos │ Ian Saccar</title>
+  <meta name="description" content="Sites que desenvolvi para clientes: Mudanças Miami, Mudanças Menezes, DCG Transportes e Melhor Embalagens & Utilidades.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projetos │ Ian Saccar">
+  <meta property="og:description" content="Sites que desenvolvi para clientes: Mudanças Miami, Mudanças Menezes, DCG Transportes e Melhor Embalagens & Utilidades.">
+  <meta property="og:image" content="assets/image/projetos/mudancas-menezes.jpg">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsividade.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!--AOS CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-  <!--EmailJS-->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN">
@@ -65,307 +58,150 @@
 </head>
 
 <body>
-
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="loader"></div>
 
-  <!--Start HEADER-->
   <header id="header" class="header">
-    <div class="container-header">
-      <div class="logo">
-        <a href="index.html">ISX <span class="destaque">│ DEV.</span></a>
-      </div>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div id="menu" class="menu-navegacao">
-        <i class="fa-solid fa-times close-icon"></i>
+    <div class="wrap container-header">
+      <a class="logo" href="index.html">ISX<span class="destaque">.dev</span></a>
+      <button class="menu-icon" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav id="menu" class="menu-navegacao" aria-label="Principal">
+        <button class="close-icon" type="button" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
         <ul class="lista-navegacao">
-          <li><a href="index.html" class="fade-left">INÍCIO</a></li>
-          <li><a href="sobre-mim.html" class="fade-up">SOBRE</a></li>
-          <li><a href="meus-projetos.html" class="fade-down">PROJETOS</a></li>
-          <li><a href="contato.html" class="fade-left">CONTATO</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-mim.html">Sobre</a></li>
+          <li><a href="meus-projetos.html" class="ativo" aria-current="page">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
-  <!--End HEADER-->
 
-  <!--Start Section Projects-->
-  <section id="projects" class="projects">
-    <div class="container-projects">
-
-      <div class="headline" data-aos="fade-up" data-aos-delay="100">
-        <span>Alguns projetos</span>
-      </div>
-
-      <div class="content-projects">
-        <div class="cards-projects">
-
-          <!--Card Projeto 1-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
-            <div class="img-project">
-              <img src="assets/image/calculadora.png" alt="Calculadora">
+  <main id="conteudo">
+    <section class="secao">
+      <div class="wrap">
+        <span class="eyebrow">Projetos</span>
+        <h1 class="titulo-secao">Sites que estão no ar, trabalhando para clientes reais.</h1>
+        <p class="intro">Transportadoras e uma loja de São Paulo. Em todos, o objetivo é o mesmo: quem chega pelo celular entende o serviço em poucos segundos e pede orçamento sem sair da página.</p>
+        <div class="lista-projetos">
+        <article class="projeto">
+          <a class="projeto-midia" href="https://iansaccar7.github.io/mudancas-miami/" target="_blank" rel="noopener" aria-label="Abrir o site Mudanças Miami">
+            <div class="projeto-desktop">
+              <div class="barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/image/projetos/mudancas-miami.jpg" alt="Página inicial do site Mudanças Miami no computador" width="1440" height="900" loading="eager" decoding="async">
             </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Calculadora Windows</h2>
-                <span>Pessoal</span>
-                <p>Calculadora web com operações básicas, projetada com interface limpa e intuitiva.</p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="https://iansaccar7.github.io/Calculadora-/" target="_self"> Acessar Site </a>
-                </div>
-              </div>
+            <div class="projeto-mobile">
+              <img src="assets/image/projetos/mudancas-miami-mobile.jpg" alt="Site Mudanças Miami no celular" width="780" height="1688" loading="lazy" decoding="async">
             </div>
+          </a>
+          <div class="projeto-texto">
+            <span class="projeto-num">01 / 04</span>
+            <h2>Mudanças Miami</h2>
+            <span class="projeto-tipo">Transportadora · São Paulo</span>
+            <p>Site institucional para uma empresa de mudanças da zona oeste de São Paulo, pensado para aparecer no Google em cada bairro atendido.</p>
+            <ul class="projeto-destaques">
+              <li>Mais de 230 páginas locais por bairro e cidade, geradas por script</li>
+              <li>Páginas próprias para mudança, carreto, frete e içamento</li>
+              <li>Orçamento em quatro etapas que abre o WhatsApp já preenchido</li>
+            </ul>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SEO local</span></div>
+            <a class="link-seta" href="https://iansaccar7.github.io/mudancas-miami/" target="_blank" rel="noopener">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-          <!--Card Projeto 1-->
+        </article>
 
-          <!--Card Projeto 2-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="200">
-            <div class="img-project">
-              <img src="assets/image/cronometro.png" alt="">
+        <article class="projeto">
+          <a class="projeto-midia" href="https://iansaccar7.github.io/mudancas-menezes/" target="_blank" rel="noopener" aria-label="Abrir o site Mudanças Menezes">
+            <div class="projeto-desktop">
+              <div class="barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/image/projetos/mudancas-menezes.jpg" alt="Página inicial do site Mudanças Menezes no computador" width="1440" height="900" loading="lazy" decoding="async">
             </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Crônometro.Js</h2>
-                <span>Pessoal</span>
-                <p>Cronômetro com funções de contagem progressiva, oferecendo precisão e facilidade de uso.</p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="https://iansaccar7.github.io/Cronometro/" target="_self">Acessar Site</a>
-                </div>
-              </div>
+            <div class="projeto-mobile">
+              <img src="assets/image/projetos/mudancas-menezes-mobile.jpg" alt="Site Mudanças Menezes no celular" width="780" height="1688" loading="lazy" decoding="async">
             </div>
+          </a>
+          <div class="projeto-texto">
+            <span class="projeto-num">02 / 04</span>
+            <h2>Mudanças Menezes</h2>
+            <span class="projeto-tipo">Mudanças interestaduais · SP → Brasil</span>
+            <p>Página para uma transportadora da Bela Vista que leva mudanças de São Paulo para o Nordeste e o resto do país.</p>
+            <ul class="projeto-destaques">
+              <li>Seção explicando a mudança compartilhada, com fotos reais da frota</li>
+              <li>Serviços especiais: piano, içamento, teatro e embalagem</li>
+              <li>Formulário de orçamento em etapas, com a mensagem pronta para o WhatsApp</li>
+            </ul>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="link-seta" href="https://iansaccar7.github.io/mudancas-menezes/" target="_blank" rel="noopener">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-          <!--Card Projeto 2-->
+        </article>
 
-          <!--Card Projeto 3-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="250">
-            <div class="img-project">
-              <img src="assets/image/gas-price.png" alt="">
+        <article class="projeto">
+          <a class="projeto-midia" href="https://iansaccar7.github.io/dcg-transportes/" target="_blank" rel="noopener" aria-label="Abrir o site DCG Transportes">
+            <div class="projeto-desktop">
+              <div class="barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/image/projetos/dcg-transportes.jpg" alt="Página inicial do site DCG Transportes no computador" width="1440" height="900" loading="lazy" decoding="async">
             </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Calculadora de combustível</h2>
-                <span>Pessoal</span>
-                <p>Aplicativo de cálculo de custo de combustível, projetado para ajudar motoristas a estimar o gasto com gasolina em diferentes trajetos.</p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="https://iansaccar7.github.io/Gas-Price/" target="_self">Acessar Site</a>
-                </div>
-              </div>
+            <div class="projeto-mobile">
+              <img src="assets/image/projetos/dcg-transportes-mobile.jpg" alt="Site DCG Transportes no celular" width="780" height="1688" loading="lazy" decoding="async">
             </div>
+          </a>
+          <div class="projeto-texto">
+            <span class="projeto-num">03 / 04</span>
+            <h2>DCG Transportes</h2>
+            <span class="projeto-tipo">Fretes e carretos · Imirim, SP</span>
+            <p>Site de uma página para uma transportadora da zona norte, com foco em explicar o serviço e fechar o orçamento rápido.</p>
+            <ul class="projeto-destaques">
+              <li>Calculadora de orçamento em quatro telas: trajeto, acesso, serviços e contato</li>
+              <li>Horário de atendimento, avaliações do Google e área de cobertura</li>
+              <li>Layout leve, sem bibliotecas, carregando bem no 4G</li>
+            </ul>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="link-seta" href="https://iansaccar7.github.io/dcg-transportes/" target="_blank" rel="noopener">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-          <!--Card Projeto 3-->
+        </article>
 
-
-          <div class="chevron-down">
-            <img src="assets/image/scroll-icon.png" alt="image">
+        <article class="projeto">
+          <a class="projeto-midia" href="https://iansaccar7.github.io/melhor-embalagens/" target="_blank" rel="noopener" aria-label="Abrir o site Melhor Embalagens & Utilidades">
+            <div class="projeto-desktop">
+              <div class="barra" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="assets/image/projetos/melhor-embalagens.jpg" alt="Página inicial do site Melhor Embalagens & Utilidades no computador" width="1440" height="900" loading="lazy" decoding="async">
+            </div>
+            <div class="projeto-mobile">
+              <img src="assets/image/projetos/melhor-embalagens-mobile.jpg" alt="Site Melhor Embalagens & Utilidades no celular" width="780" height="1688" loading="lazy" decoding="async">
+            </div>
+          </a>
+          <div class="projeto-texto">
+            <span class="projeto-num">04 / 04</span>
+            <h2>Melhor Embalagens & Utilidades</h2>
+            <span class="projeto-tipo">Loja e atacado · Vila Gomes Cardim, SP</span>
+            <p>Catálogo online para uma loja de embalagens e descartáveis: o cliente monta a lista e envia o pedido direto para a loja.</p>
+            <ul class="projeto-destaques">
+              <li>Busca e filtro por categoria no catálogo</li>
+              <li>Lista de pedido salva no navegador, com quantidades</li>
+              <li>Envio do pedido completo em uma mensagem no WhatsApp</li>
+            </ul>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>LocalStorage</span></div>
+            <a class="link-seta" href="https://iansaccar7.github.io/melhor-embalagens/" target="_blank" rel="noopener">Acessar site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-
-          <!--Card Projeto 4-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="300">
-            <div class="img-project">
-              <img src="assets/image/hora-do-dia.png" alt="">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Hora do dia </h2>
-                <span>Pessoal</span>
-                <p>Portal completo que reúne um blog informativo, uma plataforma de vendas online e um
-                  diretório de serviços, tudo em um único ambiente. </p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="https://iansaccar7.github.io/hora-do-dia/" target="_self">Acessar Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 4-->
-
-          <!--Card Projeto 5-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="350">
-            <div class="img-project">
-              <img src="assets/image/Weathernow.png" alt="Helo Fernandes">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>WeatherNow</h2>
-                <span>Pessoal</span>
-                <p>Aplicativo de previsão do tempo que fornece dados atualizados e detalhados sobre clima e temperatura em diferentes localidades.</p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-js"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="https://iansaccar7.github.io/previsao-do-tempo/" target="_self">Acessar Site</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 5-->
-
-          <!--Card Projeto 6-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
-            <div class="img-project">
-              <img src="assets/image/Space-News.png" alt="">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Space News</h2>
-                <span>Landing Page</span>
-                <p>Explorador interativo das Maravilhas do Espaço, que apresenta imagens e informações fascinantes sobre planetas, estrelas e galáxias. </p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                  <i class="fab fa-react"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="#" target="_self">Site Indisponivel</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 6-->
-
-          <!--Card Projeto 7-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
-            <div class="img-project">
-              <img src="assets/image/frontend-mentor1.png" alt="">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Blog Preveiw Card</h2>
-                <span>Frontend Mentor</span>
-                <p>Desafio de cartão interativo do Frontend Mentor, focado em HTML e CSS. Este projeto explora o uso de estilos modernos, tipografia e layout responsivo,
-                  criando uma interface visual atraente e funcional. Desenvolvido para melhorias em habilidades de design de componentes e responsividade.
-                </p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="#" target="_self">Site Indisponivel</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 7-->
-
-          <!--Card Projeto 8-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
-            <div class="img-project">
-              <img src="assets/image/frontend-mentor2.png" alt="">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Product Preveiw Card</h2>
-                <span>Frontend Mentor</span>
-                <p>Cartão de produto de e-commerce desenvolvido como desafio do Frontend Mentor.
-                  O design inclui uma imagem atraente do produto, detalhes descritivos e precificação com destaque para o preço promocional.
-                </p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="#" target="_self">Site Indisponivel</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 8-->
-
-          <!--Card Projeto 9-->
-          <div class="card-project" data-aos="zoom-in" data-aos-delay="400">
-            <div class="img-project">
-              <img src="assets/image/frontend-mentor3.png" alt="">
-            </div>
-
-            <div class="content-card">
-              <div class="text-project">
-                <h2>Social Links profile</h2>
-                <span>Frontend Mentor</span>
-                <p>Página de perfil minimalista com links para redes sociais, desenvolvida como desafio do Frontend Mentor.
-                  Este projeto utiliza um design centrado e elegante com foco na tipografia e na acessibilidade.
-                </p>
-              </div>
-              <div class="cta-project">
-                <div class="tag-project">
-                  <i class="fab fa-html5"></i>
-                  <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="btn-project">
-                  <a href="#" target="_self">Site Indisponivel</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Card Projeto 9-->
+        </article>
         </div>
       </div>
-    </div>
-  </section>
-  <!--End Section Projects-->
+    </section>
+  </main>
 
-  <!--Footer-->
   <footer class="footer">
-    <p>© 2024 Ian Saccar. Todos os direitos reservados.</p>
+    <div class="wrap">
+      <p>© 2026 Ian Saccar. Desenvolvedor web em São Paulo.</p>
+      <div class="redes">
+          <a href="https://github.com/iansaccar7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ian-saccar-809b69267/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/iansaccar/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
   </footer>
-  <!--End Footer-->
 
-  <!--Scripts-->
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/headerAnimation.js"></script>
-  <script src="assets/js/textAnimation.js"></script>
   <script src="assets/js/changePagesAnimation.js"></script>
-  <script src="assets/js/loadingAnimation.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
 </body>
 
 </html>

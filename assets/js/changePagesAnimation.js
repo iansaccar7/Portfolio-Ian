@@ -1,33 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const body = document.body;
-    const navLinks = document.querySelectorAll('.lista-navegacao a');
     const loader = document.querySelector('.loader');
 
-    function fadeOut(currentUrl) {
-        body.style.transition = 'opacity 2s ease';
-        body.style.opacity = 0;  
-        loader.style.transform = 'translateX(0%)'; 
-
-        setTimeout(() => {
-            window.location.href = currentUrl;  
-        }, 500);
-    }
-
-    function handleNavLinkActivation(e) {
-        const url = this.getAttribute('href'); 
-        if (url === 'index.html' || url.includes('viverdefreelancer.com.br')) return;  
-
-        e.preventDefault();  
-        fadeOut(url);
-    }
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', handleNavLinkActivation);
-        link.addEventListener('touchstart', handleNavLinkActivation);
+    document.querySelectorAll('.lista-navegacao a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            const url = this.getAttribute('href');
+            if (e.ctrlKey || e.metaKey || url === location.pathname.split('/').pop()) return;
+            e.preventDefault();
+            loader.classList.add('ativo');
+            setTimeout(() => { window.location.href = url; }, 300);
+        });
     });
 
-    
-    window.addEventListener('load', () => {
-        body.style.opacity = 1;  
-    });
+    // Ao voltar pelo histórico, a página pode vir do cache com o loader ativo
+    window.addEventListener('pageshow', () => loader.classList.remove('ativo'));
 });

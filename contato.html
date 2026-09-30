@@ -4,24 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- FAVICON -->
-  <link rel="icon" type="image/x-icon" href="assets/image/fav-icon.png">
-
-  <title>ISX │ Desenvolvedor Web</title>
-
-
+  <title>Contato │ Ian Saccar</title>
+  <meta name="description" content="Fale com Ian Saccar sobre o site do seu negócio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato │ Ian Saccar">
+  <meta property="og:description" content="Fale com Ian Saccar sobre o site do seu negócio.">
+  <meta property="og:image" content="assets/image/projetos/mudancas-menezes.jpg">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" type="image/svg+xml" href="assets/image/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/responsividade.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!--AOS CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-
-  <!--EmailJS-->
-  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-80XVHS2NWN">
@@ -66,113 +58,91 @@
 </head>
 
 <body>
-
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="loader"></div>
 
-  <!--Start HEADER-->
   <header id="header" class="header">
-    <div class="container-header">
-      <div class="logo">
-        <a href="index.html">ISX <span class="destaque">│DEV.</span></a>
-      </div>
-      <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <div id="menu" class="menu-navegacao">
-        <i class="fa-solid fa-times close-icon"></i>
+    <div class="wrap container-header">
+      <a class="logo" href="index.html">ISX<span class="destaque">.dev</span></a>
+      <button class="menu-icon" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav id="menu" class="menu-navegacao" aria-label="Principal">
+        <button class="close-icon" type="button" aria-label="Fechar menu"><i class="fa-solid fa-xmark"></i></button>
         <ul class="lista-navegacao">
-          <li><a href="index.html" class="fade-left">INÍCIO</a></li>
-          <li><a href="sobre-mim.html" class="fade-up">SOBRE</a></li>
-          <li><a href="meus-projetos.html" class="fade-down">PROJETOS</a></li>
-          <li><a href="contato.html" class="fade-left">CONTATO</a></li>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-mim.html">Sobre</a></li>
+          <li><a href="meus-projetos.html">Projetos</a></li>
+          <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
-  <!--End HEADER-->
 
-  <!--Start Section Contact-->
-  <section id="contact" class="contact">
-    <div class="container-contact">
-      <div class="headline" data-aos="fade-up" data-aos-delay="100">
-        <span class="destaque">Vamos conversar</span>
-        <h1>Entre em Contato</h1>
-      </div>
-      <div class="content-contact">
-        <div class="left-contact" data-aos="fade-right" data-aos-delay="200">
-          <div class="text-contact">
-            <h1>Pronto para transformar suas ideias em realidade?</h1>
-            <p>Estou aqui para ajudar você a criar soluções digitais que impulsionam o crescimento do seu negócio. Entre em contato para discutirmos suas necessidades e como podemos alcançar seus objetivos juntos.</p>
-          </div>
-          <div class="list-contact">
-            <span class="destaque">Contate-me</span>
-            <div class="container-list">
-              <ul>
-                <li><i class="fa-solid fa-envelope"></i> Email: iansaccar7@gmail.com</li>
-                <li><i class="fa-solid fa-map-marker-alt"></i> Localização: São Paulo, SP - Brasil</li>
-              </ul>
-            </div>
-          </div>
-          <div class="redes-sociais-contato">
-            <span class="destaque">Redes Sociais:</span>
-            <a href="https://github.com/iansaccar7" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/iansaccar/?igsh=MXNicjIyMmdwYXk2YQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/ian-saccar-809b69267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
+  <main id="conteudo">
+    <section class="secao">
+      <div class="wrap contato-grid">
+        <div>
+          <span class="eyebrow">Contato</span>
+          <h1 class="titulo-secao">Vamos tirar o site do seu negócio do papel?</h1>
+          <p class="intro">Conte o que você precisa: um site novo, uma página de orçamento ou ajustes em um site que já existe. Respondo por e-mail.</p>
+          <ul class="lista-contato">
+            <li><i class="fa-solid fa-envelope"></i><a href="mailto:iansaccar7@gmail.com">iansaccar7@gmail.com</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>São Paulo, SP · Brasil</li>
+          </ul>
+          <div class="redes">
+          <a href="https://github.com/iansaccar7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ian-saccar-809b69267/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/iansaccar/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
         </div>
 
-        <div class="right-contact" data-aos="fade-left" data-aos-delay="300">
+        <form id="contact-form" class="form-contato" novalidate>
           <h2>Envie sua mensagem</h2>
-          <form id="contact-form">
-            <label for="name">Nome*</label>
-            <input type="text" name="user_name" required>
-
-            <label for="whatsapp">WhatsApp*</label>
-            <input type="tel" name="user_phone" required>
-
-            <label for="email">E-mail*</label>
-            <input type="email" name="user_email" required>
-
-            <label for="company">Empresa (Opcional)</label>
-            <input type="text" name="subject">
-
-            <label for="message">Mensagem*</label>
-            <textarea rows="5" name="message" required placeholder="Descreva um pouco do seu projeto..."></textarea>
-
-            <button type="submit" class="btn">Enviar Mensagem</button>
-            <p id="form-success" class="success-message">Sua mensagem foi enviada com sucesso!</p>
-          </form>
-        </div>
+          <div class="campo"><label for="nome">Nome*</label><input id="nome" type="text" name="nome" autocomplete="name" required></div>
+          <div class="campo"><label for="whatsapp">WhatsApp*</label><input id="whatsapp" type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" required></div>
+          <div class="campo"><label for="email">E-mail*</label><input id="email" type="email" name="email" autocomplete="email" required></div>
+          <div class="campo"><label for="empresa">Empresa (opcional)</label><input id="empresa" type="text" name="empresa" autocomplete="organization"></div>
+          <div class="campo"><label for="mensagem">Mensagem*</label><textarea id="mensagem" rows="5" name="mensagem" required placeholder="Descreva um pouco do seu projeto..."></textarea></div>
+          <button type="submit" class="btn">Enviar mensagem <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-nota">Ao enviar, seu aplicativo de e-mail abre com a mensagem pronta.</p>
+          <p id="form-success" class="success-message" role="status">Abrimos seu e-mail com a mensagem. É só confirmar o envio.</p>
+        </form>
       </div>
-    </div>
-  </section>
-  <!--End Section Contact-->
+    </section>
+  </main>
 
-  <!--Footer-->
   <footer class="footer">
-    <p>© 2024 Ian Saccar. Todos os direitos reservados.</p>
+    <div class="wrap">
+      <p>© 2026 Ian Saccar. Desenvolvedor web em São Paulo.</p>
+      <div class="redes">
+          <a href="https://github.com/iansaccar7" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ian-saccar-809b69267/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/iansaccar/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
   </footer>
-  <!--End Footer-->
 
-  <!--Scripts-->
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/headerAnimation.js"></script>
-  <script src="assets/js/textAnimation.js"></script>
   <script src="assets/js/changePagesAnimation.js"></script>
-  <script src="assets/js/loadingAnimation.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-
   <script>
-    AOS.init();
+    const form = document.getElementById('contact-form');
+    const whats = document.getElementById('whatsapp');
 
     // Máscara para o campo WhatsApp
-    document.getElementById('whatsapp').addEventListener('input', function(e) {
-      let value = e.target.value.replace(/\D/g, '');
-      value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
-      e.target.value = value;
+    whats.addEventListener('input', e => {
+      const v = e.target.value.replace(/\D/g, '').slice(0, 11);
+      e.target.value = v.length > 6 ? `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}` : v.length > 2 ? `(${v.slice(0, 2)}) ${v.slice(2)}` : v;
+    });
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      const d = Object.fromEntries(new FormData(form));
+      const corpo = `Nome: ${d.nome}\nWhatsApp: ${d.whatsapp}\nE-mail: ${d.email}\nEmpresa: ${d.empresa || '-'}\n\n${d.mensagem}`;
+      window.location.href = 'mailto:iansaccar7@gmail.com?subject=' + encodeURIComponent('Projeto - ' + d.nome) + '&body=' + encodeURIComponent(corpo);
+      document.getElementById('form-success').classList.add('visivel');
     });
   </script>
-
 </body>
 
 </html>
